@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Clap</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="./assets/icons/favicon.ico" rel="icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .card {
+      border:none;
+      padding: 10px 50px;
+    }
+
+    .card::after {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .card:hover::after {
+      opacity: 1;
+    }
+
+    .btn-outline-primary{
+      color:white;
+      background:#000000;
+      border: #000000;
+    }
+
+    .card:hover .btn-outline-primary{
+      background:#494949 !important;
+    }
+  </style>
+</head>
+<style>
+    .card {
+      border:none;
+      padding: 10px 50px;
+    }
+
+    .card::after {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .card:hover::after {
+      opacity: 1;
+    }
+
+    .btn-outline-primary{
+      color:white;
+      background:#000000;
+      border: #000000;
+    }
+
+    .card:hover .btn-outline-primary{
+      background:#494949 !important;
+    }
+  </style>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-between">
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/DCBPM.png" alt="">
+        <span class="d-none d-lg-block">Clap</span>
+      </a>
+    </div><!-- End Logo -->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown">
+          <button type="button" class="btn btn-primary-header">Request a quote</button>
+        </li><!-- End Messages Nav -->
+      </ul>
+    </nav><!-- End Icons Navigation -->
+  </header><!-- End Header -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+      
+      <li class="nav-item">  
+        <a class="nav-link collapsed" href="./ai-operations.html">
+          <span>AI Operations</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./human-loop.html">
+          <span>Human in The Loop</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./content-moderation.html">
+          <span>Content Moderation</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./support-operations.html">
+          <span>Support Operations</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./sales-operations.html">
+          <span>Sales Operations</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./data-operations.html">
+          <span>Data operations</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./legal-operations.html">
+          <span>Legal Operations</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./careers.html">
+          <span>Careers</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./pricing.html">
+          <span>Pricing</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./contact.html">
+          <span>Contact</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./privacy-and-terms.html">
+          <span>Privacy and Terms</span>
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <!-- End Sidebar-->
+
+  <main id="main" class="main">
+  <section class="section-1">
+    <div class="row">
+      <div class="col-12 text-center mb-3">
+        <h1>Plans for every stage of growth</h1>
+        <p style="padding: 40px">DataClap BPM works with both startups and established technology companies to provide custom solutions tailored to your specific operational requirements. You can start small and scale because of our low entry barrier and high capacity operations. No limitations.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="text-center p-3">
+              <h5 class="card-title">Starter</h5>
+              <small>For low volume requirements and seasonal requirements.</small>
+              <br><br>
+              Starts at<span class="h2">$8</span>/hr
+              <br><br>
+            </div>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </svg> Shared agents</li>
+            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </svg> Email and Chat support</li>
+            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </svg> Custom process mapping</li>
+            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </svg> Upgrade to dedicated agents whenever you are   ready.</li>
+          </ul>
+          <div class="card-body text-center">
+            <button class="btn btn-primary-header">Select</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="text-center p-3">
+              <h5 class="card-title">Dedicated Teams</h5>
+              <small>Full dedicated teams</small>
+              <br><br>
+              Starts at <span class="h2">$10 </span>/per agent, per month 
+              <br><br>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </svg> Dedicated agents</li>
+            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </svg> Email and Chat support</li>
+            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </svg> Custom process mapping</li>
+            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+              <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+            </svg> Add additional agents and temps at any time</li>
+          </ul>
+          <div class="card-body text-center">
+            <button class="btn btn-primary-header">Select</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="text-center p-3">
+              <h5 class="card-title">Custom</h5>
+              <small>For large volume requirements</small>
+            </div>
+            <p class="card-text">Contact Us</p>
+          </div>
+          <div class="card-body text-center">
+            <button class="btn btn-primary-header">Select</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+  <section class="section-2">
+    <div class="row">
+      <div class="col-12 text-centre">
+        <h1>FAQ</h1>
+      </div>
+       
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+        <div class="card faq-card">
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="faq-group-1">
+                 <br>
+                <br>
+                
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-1" type="button" data-bs-toggle="collapse">
+                  <b>What is DataClap BPM?</b>  
+                  </button>
+                </h2>
+                <div id="faqsOne-1" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    DataClap BPM helps companies achieve more by doing less by taking care of time-consuming business operation tasks. Think quality and care of people with the efficiency of software. We help companies grow without having to grow their team.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-2" type="button" data-bs-toggle="collapse">
+                   <b>During the current global pandemic, is DataClap BPM set up to WFH?</b> 
+                  </button>
+                </h2>
+                <div id="faqsOne-2" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    All our team members are currently fully equipped to work from home with company-issued laptops and headsets as well as an internet allowance to ensure a stable, high-speed internet connection. As the situation evolves, we are also providing options for teams to return to the office if/as required. Rest assured that we have stringent safety and social distancing protocols in place to keep all employees safe.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-3" type="button" data-bs-toggle="collapse">
+                  <b>How to get started?</b>  
+                  </button>
+                </h2>
+                <div id="faqsOne-3" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    Book a call with us to explain what you need help with. We’ll map out a process with you and explain how we can help you. We offer a free of cost pilot of our services before we move into the actual project.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-4" type="button" data-bs-toggle="collapse">
+                  <b>Who’ll be in charge of my tasks?</b>  
+                  </button>
+                </h2>
+                <div id="faqsOne-4" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    You’ll be assigned a dedicated project manager who’ll manage your tasks end to end from quality assurance to deliverables.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-5" type="button" data-bs-toggle="collapse">
+                  <b>How qualified are your agents?</b>  
+                  </button>
+                </h2>
+                <div id="faqsOne-5" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    All of DataClap BPM’s agents are college educated, vetted professionals.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-6 col-lg-6">
+        <div class="card faq-card">
+          <div class="card-body">
+            <div class="accordion accordion-flush" id="faq-group-1">
+                 <br>
+                <br>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-6" type="button" data-bs-toggle="collapse">
+                  <b>What if I’m not satisfied with the work?</b>  
+                  </button>
+                </h2>
+                <div id="faqsOne-6" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    Our services are trusted by companies in various stages across continents. We take utmost care to deliver quality work. If you are not satisfied with our work we’ll modify or completely redo your task at no extra cost.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-7" type="button" data-bs-toggle="collapse">
+                   <b>Will you work with our tool stack?</b> 
+                  </button>
+                </h2>
+                <div id="faqsOne-7" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    In short, yes. We work with most common used software tools for communication and project management. You can also share account details via encrypted password sharing or create accounts for DataClap BPM agents to use on your behalf.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-8" type="button" data-bs-toggle="collapse">
+                   <b>How does our pricing work?</b> 
+                  </button>
+                </h2>
+                <div id="faqsOne-8" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    You can choose a pricing plan that works for you and you’ll be billed based on the credits you use. Else you can build a custom process.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-9" type="button" data-bs-toggle="collapse">
+                   <b>Do you take up short term projects?</b> 
+                  </button>
+                </h2>
+                <div id="faqsOne-9" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    Yes. We do. We offer seasonal/short term support for all of our services.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" data-bs-target="#faqsOne-10" type="button" data-bs-toggle="collapse">
+                   <b>How do you ensure privacy and security?</b> 
+                  </button>
+                </h2>
+                <div id="faqsOne-10" class="accordion-collapse collapse" data-bs-parent="#faq-group-1">
+                  <div class="accordion-body">
+                    We take our client’s privacy, security and confidentiality very seriously. All our hires are background checked and sign confidentiality agreements. Our team is set up with VPN access protocols, encrypted hard drives,  encrypted account credentials and encrypted data sharing. We also sign an NDA with you before the start of a project.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-3">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Scale without scaling your team</h1>
+        <p>Get your business off the ground. DataClap BPM is your one-stop shop for all your outsourcing needs By taking care of all the repetitive and mundane tasks, we help you free up your employees’ time so they can be more productive.</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+        <div>
+          <img class="clap-icons" src="./assets/img/small1.png" />
+        </div>
+        <b>Tailored Solutions</b>
+        <p>One size doesn’t fit all and every business has its own unique problems. We understand this and how complex and unique your needs are, we can support you with our End to End tailored solutions.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div>
+          <img class="clap-icons" src="./assets/img/small2.png" />
+        </div>
+        <b>Cost Efficient</b>
+        <p>We have transparent and flexible pricing models that’ll be much more economical than contract workers and haing inhouse employees.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div>
+          <img class="clap-icons" src="./assets/img/small3.png" />
+        </div>
+        <b>Unparalleled Service</b>
+        <p>The success of our entire business model depends on the quality of services we provide. Fast turnaround times, high quality work and 100% satisfaction are our  priorities.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div>
+          <img class="clap-icons" src="./assets/img/small4.png" />
+        </div>
+        <b>For businesses of all sizes</b>
+        <p>Irrespective of whether you’re a startup just getting started or an established player in the market, we offer our services to companies of all sizes and at every level of growth.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div>
+          <img class="clap-icons" src="./assets/img/small5.png" />
+        </div>
+        <b>No long term commitment</b>
+        <p>We're fans of the freedom that comes with a no-strings-attached approach, and so we stand behind it 100%. You can even ask us to work on a 10-hour task and there's no long term commitment.</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+        <div>
+          <img class="clap-icons" src="./assets/img/small6.png" />
+        </div>
+        <b>Highly skilled talent</b>
+        <p>Our agents are college educated and go through a training process before they start working on any project.</p>
+      </div>
+    </div>
+</section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="row footer-menu">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+        <div>
+          <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/DCBPM.png" alt="">
+        <span class="d-none d-lg-block">Clap</span>
+      </a>
+          <p class="footer-text" style="margin: 1rem 0px;">High quality training data for AI, ML and Computer Vision.</p>
+        </div>
+        <div class="mt-3">
+          <ul class="social-media-btn-footer">
+            <li><a class="footer-links" href="https://in.linkedin.com/company/dataclap" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            <li><a class="footer-links" href="mailto:sales@dataclap.co"><i class="bi bi-envelope-fill"></i></a></li>
+          </ul>
+        </div>
+        <div class="mt-3">
+          <button type="button" class="btn btn-primary-header">Contact</button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-lg-4">
+            <b class="footer-text">Services</b>
+            <ul class="footer-menu-item">
+              <li><a class="footer-links" href="./ai-operations.html">AI Operations</a></li>
+              <li><a class="footer-links" href="./human-loop.html">Human in The Loop</a></li>
+              <li><a class="footer-links" href="./content-moderation.html">Content Moderation</a></li>
+              <li><a class="footer-links" href="./support-operations.html">Support Operation</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-lg-4">
+            <b>&nbsp</b>
+            <ul class="footer-menu-item">
+              <li><a class="footer-links" href="./sales-operations.html">Sales Operation</a></li>
+              <li><a class="footer-links" href="./data-operations.html">Data Operation</a></li>
+              <li><a class="footer-links" href="./legal-operations.html">Legal Operation</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-lg-4">
+            <b class="footer-text">Links</b>
+            <ul class="footer-menu-item">
+              <li><a class="footer-links" href="./pricing.html">Pricing</a></li>
+              <li><a class="footer-links" href="./careers.html">Careers</a></li>
+              <li><a class="footer-links" href="./contact.html">Contact</a></li>
+              <li><a class="footer-links" href="./privacy-and-terms.html">Privacy and Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row copyright">
+      <div class="col-xs-12">
+          <div class="text-center footer-text">
+            &copy; 2022 Copyright <strong><span>Clap</span></strong>. All Rights Reserved
+          </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
