@@ -224,6 +224,8 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0 1px rgba(1, 41, 112, 0.1);
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .card-header, .card-footer {
@@ -237,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0 15px 0;
   font-size: 18px;
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 .card-title span {
@@ -251,6 +253,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-img-overlay {
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+.list-group-item{
+  background-color: #000000;
+  color: #fff;
 }
 
 /* Alerts */
@@ -299,6 +306,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 .accordion-flush .accordion-body {
+  text-align: left;
   padding: 0 0 15px 0;
   color: #000000;
   font-size: 15px;
@@ -1263,9 +1271,19 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 } 
 
-.section-1 h1, .section-2 h1, .section-3 h1, .section-4 h1, .section-5 h1, .section-6 h1{
+h1 {
   font-weight: bold;
-  font-family: noto_Serif_bold;
+  font-family: noto_Serif_bold !important;
+}
+
+h2 {
+  font-weight: bold;
+  font-family: noto_Serif_bold !important;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 18px !important;
 }
 
 .section-1 p, .section-2 p, .section-3 p, .section-4 p, .section-5 p, .section-5 p, .section-6 p {
