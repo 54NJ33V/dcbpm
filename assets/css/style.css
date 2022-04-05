@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1199px) {
   #main {
-    padding: 20px;
+    padding: 0.5px;
   }
 }
 
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 32px;
   padding-right: 10px;
   cursor: pointer;
-  color: #000000;
+  color: #ffffff;
 }
 .header .search-bar {
   min-width: 360px;
@@ -1311,6 +1311,7 @@ h3 {
   background-color: #FCFCFE;
   border-color: #FCFCFE;
   color: #000000;
+  font-size: 0.9rem;
 }
 
 .section-1-left {
