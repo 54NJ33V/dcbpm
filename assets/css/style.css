@@ -24,9 +24,9 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  background: #FCFCFE;
-  color: #444444;
+  font-family: "Roboto Mono", monospace;
+  background: #DCE8FF;
+  color: #000000;
 }
 
 a {
@@ -40,7 +40,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 /*--------------------------------------------------------------
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 25px;
 }
 .dropdown-menu .dropdown-footer a {
-  color: #444444;
+  color: #000000;
   text-decoration: underline;
 }
 .dropdown-menu .dropdown-footer a:hover {
@@ -225,7 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   box-shadow: 0px 0 1px rgba(1, 41, 112, 0.1);
   background-color: #000000;
-  color: #ffffff;
+  color: #DCE8FF;
 }
 
 .card-header, .card-footer {
@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 0 15px 0;
   font-size: 18px;
   font-weight: 500;
-  color: #ffffff;
+  color: #DCE8FF;
   font-family: "Poppins", sans-serif;
 }
 .card-title span {
@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Breadcrumbs */
 .breadcrumb {
   font-size: 14px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: #899bbd;
   font-weight: 600;
 }
@@ -370,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo span {
   font-size: 26px;
   font-weight: 700;
-  color: #FCFCFE;
+  color: #DCE8FF;
   font-family: "Nunito", sans-serif;
 }
 
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 32px;
   padding-right: 10px;
   cursor: pointer;
-  color: #ffffff;
+  color: #DCE8FF;
 }
 .header .search-bar {
   min-width: 360px;
@@ -512,7 +512,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #444444;
+  color: #000000;
 }
 .header-nav .messages .message-item p {
   font-size: 13px;
@@ -530,7 +530,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #444444;
+  color: #000000;
 }
 .header-nav .profile .dropdown-header span {
   font-size: 14px;
@@ -630,7 +630,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0 5px 15px;
 }
 .footer-links, .footer-text{
-  color: #FCFCFE;
+  color: #DCE8FF;
 }
 .footer-links:hover{
   color: #fff;
@@ -641,7 +641,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   font-weight: 600;
   color: #000000;
-  background-color: #FCFCFE;
+  background-color: #DCE8FF;
   transition: 0.3;
   padding: 10px 15px;
   border-radius: 4px;
@@ -649,10 +649,10 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar-nav .nav-link i {
   font-size: 16px;
   margin-right: 10px;
-  color: #FCFCFE;
+  color: #DCE8FF;
 }
 .sidebar-nav .nav-link.collapsed {
-  color: #FCFCFE;
+  color: #DCE8FF;
   background: transparent;
 }
 .sidebar-nav .nav-link.collapsed i {
@@ -682,7 +682,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #FCFCFE;
+  color: #DCE8FF;
   transition: 0.3;
   padding: 10px 0 10px 40px;
   transition: 0.3s;
@@ -694,10 +694,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 .sidebar-nav .nav-content a:hover, .sidebar-nav .nav-content a.active {
-  color: #ffffff;
+  color: #DCE8FF;
 }
 .sidebar-nav .nav-content a.active i {
-  background-color: #FCFCFE;
+  background-color: #DCE8FF;
 }
 
 /*--------------------------------------------------------------
@@ -1184,7 +1184,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #pricing-table {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", monospace;
   border-collapse: collapse;
   width: 70%;
 }
@@ -1287,7 +1287,7 @@ h3 {
 }
 
 .section-1 p, .section-2 p, .section-3 p, .section-4 p, .section-5 p, .section-5 p, .section-6 p {
-  font-family: MS_Reference_Sans_Serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 .main-img{
@@ -1296,20 +1296,20 @@ h3 {
 }
 
 .btn-primary{
-  background-color: #FCFCFE;
-  border-color: #FCFCFE;
+  background-color: #DCE8FF;
+  border-color: #DCE8FF;
   color: #000000;
 }
 
 .btn-primary:hover{
   background-color: #000000;
   border-color: #000000;
-  color: #FCFCFE;
+  color: #DCE8FF;
 }
 
 .btn-primary-header{
-  background-color: #FCFCFE;
-  border-color: #FCFCFE;
+  background-color: #DCE8FF;
+  border-color: #DCE8FF;
   color: #000000;
   font-size: 0.9rem;
 }
@@ -1320,14 +1320,14 @@ h3 {
 }
 
 .btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle{
-  background-color: #FCFCFE;
-  border-color: #FCFCFE;
+  background-color: #DCE8FF;
+  border-color: #DCE8FF;
   color: #000000;
 }
 
 .btn-check:focus+.btn-primary, .btn-primary:focus{
-  background-color: #FCFCFE;
-  border-color: #FCFCFE !important;
+  background-color: #DCE8FF;
+  border-color: #DCE8FF !important;
   color: #000000;
 }
 
@@ -1347,7 +1347,7 @@ h3 {
 .clap-btn{
   background-color: #000;
   border-color: #000;
-  color: #FCFCFE;
+  color: #DCE8FF;
 }
 
 .clap-icons{
