@@ -351,6 +351,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
   border-bottom: 2px solid #4154f1;
 }
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -364,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .logo img {
-  max-height: 26px;
+  max-height: 20px;
   margin-right: 6px;
 }
 .logo span {
