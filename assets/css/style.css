@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .logo img {
-  max-height: 24px;
+  max-height: 22px;
   margin-right: 6px;
 }
 .logo span {
@@ -387,7 +387,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Search Bar */
 }
 .header .toggle-sidebar-btn {
-  font-size: 22px;
+  font-size: 20px;
   padding-right: 10px;
   cursor: pointer;
   color: #DCE8FF;
